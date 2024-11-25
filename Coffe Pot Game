@@ -1,0 +1,624 @@
+import java.util.Scanner; 
+
+import java.util.Random; 
+
+public class App { 
+
+    public static void main(String[] args) throws Exception { 
+
+        String [] BartRoom = {"fight", "tap"}; 
+
+        for (int j =0; j<50;j++){ 
+
+            System.out.println(" "); 
+
+        } 
+
+        System.out.println("  ______/\\_____"); 
+
+        System.out.println(" /             \\"); 
+
+        System.out.println("|               |"); 
+
+        System.out.println("|               |__"); 
+
+        System.out.println("|               |  \\"); 
+
+        System.out.println(" \\             /   /"); 
+
+        System.out.println("  |           |   /"); 
+
+        System.out.println("  |           |__/"); 
+
+        System.out.println("  |___________|"); 
+
+        System.out.println(" This is just a regular ole' coffee pot!"); 
+
+        System.out.println(""); 
+
+        room(BartRoom); 
+
+        Scanner console = new Scanner(System.in); 
+
+        int choice = 8; 
+
+        while (choice != 0){ 
+
+            choice = console.nextInt(); 
+
+            if (choice == 1){ 
+
+                for (int j =0; j<50;j++){ 
+
+                    System.out.println(" "); 
+
+                } 
+
+                System.out.println("  ______/\\_____"); 
+
+                System.out.println(" /             \\"); 
+
+                System.out.println("|               |"); 
+
+                System.out.println("|     \\    /    |__"); 
+
+                System.out.println("|     0    0    |  \\"); 
+
+                System.out.println(" \\             /   /"); 
+
+                System.out.println("  |    ____   |   /"); 
+
+                System.out.println("  |   /____\\  |__/"); 
+
+                System.out.println("  |___________|"); 
+
+                System.out.println("GRRR I AM THE COFEE POT OF DOOM"); 
+
+                System.out.println("You Dare Challenge ME?!?!"); 
+
+                Scanner fight = new Scanner(System.in); 
+
+         
+
+                System.out.println("e/q"); 
+
+                String challenge = fight.nextLine(); 
+
+                 
+
+                        if (challenge.equals("q") ){ 
+
+                            System.out.println("  ______/\\_____"); 
+
+                            System.out.println(" /             \\"); 
+
+                            System.out.println("|               |"); 
+
+                            System.out.println("|     \\    /    |__"); 
+
+                            System.out.println("|     0    0    |  \\"); 
+
+                            System.out.println(" \\             /   /"); 
+
+                            System.out.println("  |    ____   |   /"); 
+
+                            System.out.println("  |           |__/"); 
+
+                            System.out.println("  |___________|"); 
+
+                            System.out.println("Thats What I Thought!!"); 
+
+                            room(BartRoom); 
+
+         
+
+                        } 
+
+                        if (challenge.equals("e")){ 
+
+                            System.out.println("  ______/\\_____"); 
+
+                            System.out.println(" /             \\"); 
+
+                            System.out.println("|               |"); 
+
+                            System.out.println("|     \\    /    |__"); 
+
+                            System.out.println("|     0    0    |  \\"); 
+
+                            System.out.println(" \\             /   /"); 
+
+                            System.out.println("  |    ____   |   /"); 
+
+                            System.out.println("  |   /____\\  |__/"); 
+
+                            System.out.println("  |___________|"); 
+
+                            System.out.println("Then it is A FIght YOU WIll RECIEVE!"); 
+
+ 
+
+                            System.out.println("press e to Progress"); 
+
+                            Scanner p1 = new Scanner(System.in); 
+
+                            String progression = p1.nextLine(); 
+
+                            if (progression.equals("e")){ 
+
+                                System.out.println("I CHALLENGE YOU TO A FIGHT!"); 
+
+                                System.out.println("HERE ARE THE RULES BELOW:"); 
+
+                                System.out.println("I get a random health, and you start with a health of 50."); 
+
+                                System.out.println("you have a choice between attacks 1-3. Each of them do a different amount of damage"); 
+
+                                System.out.println("I attack directly after you attack me and I deal a random amount of damage."); 
+
+                                System.out.println("Lets see who wins the fight!"); 
+
+                                System.out.println("Press e to progress"); 
+
+                                Scanner p2 = new Scanner(System.in); 
+
+                                String progression2 = p2.nextLine(); 
+
+                                if (progression2.equals( "e")){ 
+
+                                    // put method here 
+
+ 
+
+                                    CoffeePotGame.interactWith(); 
+
+                                   room(BartRoom); 
+
+                                } 
+
+ 
+
+                            } 
+
+                            else if (progression.equals("q")){ 
+
+                                room(BartRoom); 
+
+                            } 
+
+ 
+
+                             
+
+                        } 
+
+                         
+
+            } 
+
+            else if (choice == 2){ 
+
+                for (int j =0; j<50;j++){ 
+
+                    System.out.println(" "); 
+
+                } 
+
+                System.out.println("  ______/\\_____"); 
+
+                System.out.println(" /             \\"); 
+
+                System.out.println("|               |"); 
+
+                System.out.println("|     /    \\    |__"); 
+
+                System.out.println("|     0    0    |  \\"); 
+
+                System.out.println(" \\             /   /"); 
+
+                System.out.println("  |   _____   |   /"); 
+
+                System.out.println("  |   \\___/   |__/"); 
+
+                System.out.println("  |___________|"); 
+
+                System.out.println("Hey there bud!"); 
+
+                 
+
+                   room(BartRoom); 
+
+                } 
+
+          
+
+            
+
+             
+
+            System.out.println("-----------------------------------------"); 
+
+             
+
+             
+
+            } 
+
+             
+
+            System.out.println("you left the room!"); 
+
+        } 
+
+    public static void room( String[] containers){ 
+
+ 
+
+        System.out.println("----------------------------------------"); 
+
+        System.out.println("---> choose an option (number)            "); 
+
+        System.out.println("0) Leave                             "); 
+
+        for (int i = 0; i< containers.length; i++){ 
+
+           
+
+            System.out.print((i+1) + ") "); 
+
+            System.out.print(containers[i]); 
+
+            System.out.println(""); 
+
+        } 
+
+        
+
+        System.out.println("----------------------------------------"); 
+
+     
+
+    } 
+
+ 
+
+public static void playGame(Scanner scanners, Random random) { 
+
+        int player1Score = 0; 
+
+        int player2Score = 0; 
+
+        int currentPlayer = 1; 
+
+        String choicer = ""; 
+
+        while (player1Score < 15 && player2Score < 15) { 
+
+            int currentTurnScore = 0; 
+
+            int roll; 
+
+            System.out.println("************************"); 
+
+            if (currentPlayer == 1){ 
+
+                System.out.println("It's your turn"); 
+
+            } 
+
+            else if(currentPlayer==2){ 
+
+                System.out.println("Coffee Pot is playing."); 
+
+            }  
+
+        String list = ""; 
+
+        do{ 
+
+             
+
+            roll = random.nextInt(6) + 1; 
+
+            list += roll + " "; 
+
+            System.out.println(list); 
+
+            currentTurnScore += roll; 
+
+            if (roll > 1 && currentPlayer == 1){ 
+
+                System.out.println("type stop or go: "); 
+
+                choicer = scanners.nextLine(); 
+
+            } 
+
+            else if (roll > 1 && currentPlayer == 2 ){ 
+
+                int half = (int) (Math.random()*10+1); 
+
+                if (half > 3){choicer = "go";} 
+
+                if (half <= 3){choicer = "stop";} 
+
+            } 
+
+            else{choicer = "";} 
+
+        } while ( !choicer.equalsIgnoreCase("stop") && roll != 1); 
+
+     
+
+         
+
+        if (roll == 1) { 
+
+            currentTurnScore = 0; 
+
+        } 
+
+ 
+
+        if (currentPlayer == 1) { 
+
+            player1Score += currentTurnScore; 
+
+        } else { 
+
+            player2Score += currentTurnScore; 
+
+        } 
+
+        if (currentPlayer ==2){ 
+
+            System.out.println("**********************"); 
+
+            System.out.println("You= " + player1Score); 
+
+            System.out.println("coffee Pot= " + player2Score); 
+
+        } 
+
+         
+
+        currentPlayer = currentPlayer == 1 ? 2 : 1; 
+
+        } 
+
+ 
+
+        // Make this an if statement 
+
+            String winner = player1Score >= 30 ? "You" : "Coffee Pot"; 
+
+ 
+
+            System.out.println("**********************"); 
+
+            System.out.println(winner + " won!"); 
+
+ 
+
+            if (winner.equals("You")){ 
+
+                System.out.println("No, no, no! How did this happen? You got me. I underestimated you, thought you were just another coder passing through. But you, you're different. Fine, you win this round. But mark my words, I'll be back. And next time, I won't be so easy to beat."); 
+
+                System.out.println("  ______/\\_____"); 
+
+                System.out.println(" /             \\"); 
+
+                System.out.println("|               |"); 
+
+                System.out.println("|     /    \\    |__"); 
+
+                System.out.println("|     0    0    |  \\"); 
+
+                System.out.println(" \\             /   /"); 
+
+                System.out.println("  |    ____   |   /"); 
+
+                System.out.println("  |   /____\\  |__/"); 
+
+                System.out.println("  |___________|"); 
+
+                System.out.println("redirecting you back to the room now!"); 
+
+            } 
+
+            else if (winner.equals("Coffee Pot")){ 
+
+                System.out.println("  ______/\\_____"); 
+
+                System.out.println(" /             \\"); 
+
+                System.out.println("|               |"); 
+
+                System.out.println("|     \\    /    |__"); 
+
+                System.out.println("|     0    0    |  \\"); 
+
+                System.out.println(" \\             /   /"); 
+
+                System.out.println("  |    ____   |   /"); 
+
+                System.out.println("  |   /____\\  |__/"); 
+
+                System.out.println("  |___________|"); 
+
+                System.out.println("You thought you could defeat me, didn't you? Well, think again, because I'm not going down without a fight."); 
+
+                System.out.println("You see, I'm not just any old coffee pot. I'm a force to be reckoned with, a master of manipulation and cunning. "); 
+
+                System.out.println("redirecting you back to the room now!"); 
+
+            } 
+
+        } 
+
+
+import java.util.random; 
+
+import java.util.Scanner; 
+
+public class CoffeePotGame { 
+
+ 
+
+    public static void interactWith() { 
+
+        // Initialize the coffee pot with a random strength between 1 and 100 
+
+         
+
+        int coffeePotStrength = (int) (Math.random()*100 - 50); 
+
+ 
+
+        // Initialize the scanner to get user input 
+
+        Scanner scan = new Scanner(System.in); 
+
+ 
+
+        // Initialize the user's strength to 50 
+
+        int userStrength = 50; 
+
+ 
+
+        // Loop until the user defeats the coffee pot or runs out of strength 
+
+        while (coffeePotStrength > 0 && userStrength > 0) { 
+
+            System.out.println("The coffee pot has a strength of " + coffeePotStrength + "."); 
+
+            System.out.println("You have a strength of " + userStrength + "."); 
+
+            System.out.println("Choose an attack (1-3):"); 
+
+            System.out.println("1. Ice Cubes (deals 10 damage)"); 
+
+            System.out.println("2. Clog the coffee filter (deals random between 5 to 25 damage)"); 
+
+            System.out.println("3. Drop on Floor (deals random between 0 to 35 damage)"); 
+
+            int attack; 
+
+            int userAttack = scan.nextInt(); 
+
+ 
+
+            if (userAttack == 1) { 
+
+                coffeePotStrength -= 10; 
+
+                System.out.println("You threw ice cubes in the coffee pot for 10 damage!"); 
+
+            } else if (userAttack == 2) { 
+
+                attack = (int) (Math.random()*25 -5); 
+
+                coffeePotStrength -= attack; 
+
+                System.out.println("You clogged the filter of the coffee pot for " + attack +" damage!"); 
+
+            } else if (userAttack == 3) { 
+
+                attack = (int) (Math.random()*35-1); 
+
+                coffeePotStrength -= attack; 
+
+                System.out.println("You dropped the coffee pot on the floor for " + attack +" damage!"); 
+
+            } else { 
+
+                System.out.println("Invalid attack!"); 
+
+                continue; 
+
+            } 
+
+ 
+
+            // The coffee pot attacks the user with a random amount of damage between 5 and 15 
+
+            int coffeePotDamage = (int) (Math.random()*15 + 5); 
+
+            userStrength -= coffeePotDamage; 
+
+            System.out.println("The coffee pot attacked you for " + coffeePotDamage + " damage!"); 
+
+ 
+
+            // Check if the user or coffee pot has run out of strength 
+
+            if (coffeePotStrength <= 0) { 
+
+                System.out.println("You defeated the coffee pot!"); 
+
+                System.out.println("No, no, no! How did this happen? You got me. I underestimated you, thought you were just another coder passing through. But you, you're different. Fine, you win this round. But mark my words, I'll be back. And next time, I won't be so easy to beat."); 
+
+                System.out.println("  ______/\\_____"); 
+
+                System.out.println(" /             \\"); 
+
+                System.out.println("|               |"); 
+
+                System.out.println("|     /    \\    |__"); 
+
+                System.out.println("|     0    0    |  \\"); 
+
+                System.out.println(" \\             /   /"); 
+
+                System.out.println("  |    ____   |   /"); 
+
+                System.out.println("  |   /____\\  |__/"); 
+
+                System.out.println("  |___________|"); 
+
+                System.out.println("redirecting you back to the room now!"); 
+
+                 
+
+            } else if (userStrength <= 0) { 
+
+                System.out.println("You were defeated by the coffee pot!"); 
+
+                System.out.println("  ______/\\_____"); 
+
+                System.out.println(" /             \\"); 
+
+                System.out.println("|               |"); 
+
+                System.out.println("|     \\    /    |__"); 
+
+                System.out.println("|     0    0    |  \\"); 
+
+                System.out.println(" \\             /   /"); 
+
+                System.out.println("  |    ____   |   /"); 
+
+                System.out.println("  |   /____\\  |__/"); 
+
+                System.out.println("  |___________|"); 
+
+                System.out.println("You thought you could defeat me, didn't you? Well, think again, because I'm not going down without a fight."); 
+
+                System.out.println("You see, I'm not just any old coffee pot. I'm a force to be reckoned with, a master of manipulation and cunning. "); 
+
+                System.out.println("redirecting you back to the room now!"); 
+
+                 
+
+            } 
+
+        } 
+
+ 
+
+        
+
+    } 
+
+} 
